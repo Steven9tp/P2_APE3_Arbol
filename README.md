@@ -48,11 +48,11 @@ Contar la cantidad total de nodos en un árbol N-ario mediante recursividad.
 
 **Estructura del árbol de prueba:**
 ````
-1 (raíz)
-/ |
-2 3 4
-/
-5 6
+      1 (raíz)
+    / | \
+   2  3  4
+ /  \
+5    6
 ````
 
 **Resultado esperado:** 6 nodos
@@ -64,10 +64,10 @@ Insertar valores en un Árbol Binario de Búsqueda manteniendo su propiedad.
 
 **Estructura resultante:**
 ````
-10
-/
-5 15
-/
+    10
+   / \
+  5  15
+ /
 3
 ````
 
@@ -82,11 +82,11 @@ Listar los elementos del árbol en orden (Izquierda → Raíz → Derecha).
 
 **Árbol de prueba:**
 ````
-4
-/
-2 6
-/ \ /
-1 3 5 7
+     4
+   /  \
+  2    6
+ / \  / \
+1   3 5  7
 ````
 
 **Resultado esperado:** 1, 2, 3, 4, 5, 6, 7
@@ -96,11 +96,12 @@ Invertir el árbol intercambiando los hijos izquierdo y derecho.
 
 **Transformación:**
 Antes: Después:
+````
   1       1
 /  \    /  \
 2   3 → 3    2
 
-
+````
 ## Instalación y Ejecución
 
 ### Requisitos Previos
@@ -170,7 +171,7 @@ Ejercicio	Salida Esperada
 3	Altura calculada: 3
 4	[1, 2, 3, 4, 5, 6, 7]
 5	Izq: 3, Der: 2
-* Conceptos Clave
+# Conceptos Clave
 Complejidad Algorítmica
 Operación	Complejidad Temporal	Complejidad Espacial
 Conteo de nodos	O(n)	O(h)
@@ -188,14 +189,14 @@ Nodo interno	Nodo con al menos un hijo
 Nivel	Distancia desde la raíz
 Altura	Máximo número de niveles
 BST	Binary Search Tree (Árbol Binario de Búsqueda)
-*  Diferencias C++ vs Java
+# Diferencias C++ vs Java
 Aspecto	C++	Java
 Gestión de memoria	Manual (new/delete)	Automática (GC)
 Punteros	Explícitos (*, ->)	Referencias implícitas
 Colecciones	std::vector	ArrayList
 Valor nulo	nullptr	null
 Máximo de números	std::max()	Math.max()
-* Próximas Mejoras (Roadmap)
+# Próximas Mejoras (Roadmap)
 Implementar operación de búsqueda en BST
 
 Agregar recorridos Pre-Order y Post-Order
