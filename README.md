@@ -1,10 +1,5 @@
 # P2_APE3_Arbol
 # Guía Práctica de Estructuras de Datos: Árboles
-
-[![C++](https://img.shields.io/badge/C++-11-blue.svg)](https://isocpp.org/)
-[![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ## Descripción
 
 Este repositorio contiene la implementación completa de **5 ejercicios fundamentales** sobre estructuras de datos jerárquicas (árboles) en los lenguajes **C++** y **Java**. Cada ejercicio incluye código funcional con métodos `main` de prueba integrados para verificar su correcto funcionamiento.
@@ -156,7 +151,7 @@ cd cpp && for file in *.cpp; do g++ "$file" -o "${file%.cpp}"; ./"${file%.cpp}";
 
 # Java
 cd java && for file in *.java; do javac "$file"; java "${file%.java}"; done
-* Resultados Esperados
+# Resultados Esperados
 C++
 Ejercicio	Salida Esperada
 1	Nodos calculados: 6
