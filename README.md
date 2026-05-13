@@ -1,59 +1,60 @@
 # P2_APE3_Arbol
-# 🌳 Guía Práctica de Estructuras de Datos: Árboles
+# Guía Práctica de Estructuras de Datos: Árboles
 
 [![C++](https://img.shields.io/badge/C++-11-blue.svg)](https://isocpp.org/)
 [![Java](https://img.shields.io/badge/Java-11-orange.svg)](https://www.oracle.com/java/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 Descripción
+## Descripción
 
 Este repositorio contiene la implementación completa de **5 ejercicios fundamentales** sobre estructuras de datos jerárquicas (árboles) en los lenguajes **C++** y **Java**. Cada ejercicio incluye código funcional con métodos `main` de prueba integrados para verificar su correcto funcionamiento.
 
-## 🎯 Objetivos de Aprendizaje
+## Objetivos de Aprendizaje
 
 Al completar estos ejercicios, serás capaz de:
 
-1. ✅ Comprender y manipular la estructura de **árboles N-arios** (nodos con múltiples hijos)
-2. ✅ Implementar **inserciones en Árboles Binarios de Búsqueda (BST)**
-3. ✅ Utilizar **recursividad** para calcular métricas estructurales (altura)
-4. ✅ Extraer datos mediante **recorridos estándar** (In-Order)
-5. ✅ Modificar la estructura de punteros para **transformar árboles** (inversión/espejo)
+1.  Comprender y manipular la estructura de **árboles N-arios** (nodos con múltiples hijos)
+2.  Implementar **inserciones en Árboles Binarios de Búsqueda (BST)**
+3.  Utilizar **recursividad** para calcular métricas estructurales (altura)
+4.  Extraer datos mediante **recorridos estándar** (In-Order)
+5.  Modificar la estructura de punteros para **transformar árboles** (inversión/espejo)
 
-## 📁 Estructura del Repositorio
+# Estructura del Repositorio
+````
 /arboles-guia-practica/
 │
-├── 📂 cpp/ # Implementaciones en C++
+├── cpp/ # Implementaciones en C++
 │ ├── Ejercicio1_Basico.cpp # Árboles N-arios (conteo de nodos)
 │ ├── Ejercicio2_Binario.cpp # BST - Inserción
 │ ├── Ejercicio3_Binario.cpp # BST - Cálculo de altura
 │ ├── Ejercicio4_Recorridos.cpp # BST - Recorrido In-Order
 │ └── Ejercicio5_Transformacion.cpp # BST - Árbol espejo
 │
-├── 📂 java/ # Implementaciones en Java
+├── java/ # Implementaciones en Java
 │ ├── Ejercicio1_Basico.java # Árboles N-arios (conteo de nodos)
 │ ├── Ejercicio2_Binario.java # BST - Inserción
 │ ├── Ejercicio3_Binario2.java # BST - Cálculo de altura
 │ ├── RecorridoInOrder.java # BST - Recorrido In-Order
 │ └── Ejercicio5_Transformacion.java # BST - Árbol espejo
 │
-├── 📄 INFORME_TECNICO.md # Documentación técnica detallada
-└── 📄 README.md # Este archivo
+├── INFORME_TECNICO.md # Documentación técnica detallada
+└── README.md # Este archivo
 
-text
-
-## 📚 Ejercicios
+````
+#  Ejercicios
 
 ### Ejercicio 1: Conteo de Nodos (Árboles N-arios)
 Contar la cantidad total de nodos en un árbol N-ario mediante recursividad.
 
 **Estructura del árbol de prueba:**
+````
 1 (raíz)
 / |
 2 3 4
 /
 5 6
+````
 
-text
 **Resultado esperado:** 6 nodos
 
 ### Ejercicio 2: Inserción en BST
@@ -62,13 +63,13 @@ Insertar valores en un Árbol Binario de Búsqueda manteniendo su propiedad.
 **Secuencia de inserción:** 10 → 5 → 15 → 3
 
 **Estructura resultante:**
+````
 10
 /
 5 15
 /
 3
-
-text
+````
 
 ### Ejercicio 3: Cálculo de Altura
 Calcular la profundidad máxima (altura) de un árbol binario.
@@ -80,13 +81,14 @@ Calcular la profundidad máxima (altura) de un árbol binario.
 Listar los elementos del árbol en orden (Izquierda → Raíz → Derecha).
 
 **Árbol de prueba:**
+````
 4
 /
 2 6
 / \ /
 1 3 5 7
+````
 
-text
 **Resultado esperado:** 1, 2, 3, 4, 5, 6, 7
 
 ### Ejercicio 5: Transformación (Árbol Espejo)
@@ -94,13 +96,12 @@ Invertir el árbol intercambiando los hijos izquierdo y derecho.
 
 **Transformación:**
 Antes: Después:
-1 1
-/ \ /
-2 3 → 3 2
+  1       1
+/  \    /  \
+2   3 → 3    2
 
-text
 
-## 🚀 Instalación y Ejecución
+## Instalación y Ejecución
 
 ### Requisitos Previos
 
@@ -154,7 +155,7 @@ cd cpp && for file in *.cpp; do g++ "$file" -o "${file%.cpp}"; ./"${file%.cpp}";
 
 # Java
 cd java && for file in *.java; do javac "$file"; java "${file%.java}"; done
-📊 Resultados Esperados
+* Resultados Esperados
 C++
 Ejercicio	Salida Esperada
 1	Nodos calculados: 6
@@ -169,7 +170,7 @@ Ejercicio	Salida Esperada
 3	Altura calculada: 3
 4	[1, 2, 3, 4, 5, 6, 7]
 5	Izq: 3, Der: 2
-🧠 Conceptos Clave
+* Conceptos Clave
 Complejidad Algorítmica
 Operación	Complejidad Temporal	Complejidad Espacial
 Conteo de nodos	O(n)	O(h)
@@ -187,14 +188,14 @@ Nodo interno	Nodo con al menos un hijo
 Nivel	Distancia desde la raíz
 Altura	Máximo número de niveles
 BST	Binary Search Tree (Árbol Binario de Búsqueda)
-🔄 Diferencias C++ vs Java
+*  Diferencias C++ vs Java
 Aspecto	C++	Java
 Gestión de memoria	Manual (new/delete)	Automática (GC)
 Punteros	Explícitos (*, ->)	Referencias implícitas
 Colecciones	std::vector	ArrayList
 Valor nulo	nullptr	null
 Máximo de números	std::max()	Math.max()
-📈 Próximas Mejoras (Roadmap)
+* Próximas Mejoras (Roadmap)
 Implementar operación de búsqueda en BST
 
 Agregar recorridos Pre-Order y Post-Order
@@ -209,33 +210,4 @@ Visualización gráfica de árboles
 
 Pruebas unitarias automatizadas
 
-🤝 Contribuciones
-Las contribuciones son bienvenidas. Por favor:
 
-Fork el repositorio
-
-Crea una rama para tu feature (git checkout -b feature/nueva-funcionalidad)
-
-Commit tus cambios (git commit -m 'Agrega nueva funcionalidad')
-
-Push a la rama (git push origin feature/nueva-funcionalidad)
-
-Abre un Pull Request
-
-📝 Licencia
-Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
-
-👨‍💻 Autor
-Carrasco Manotoa Cesar Steven
-Estudiante de Ingeniería en Software
-Universidad Técnica de Ambato
-3ro "B" - Estructura de Datos
-🙏 Agradecimientos
-Ing. Jose Caiza - Docente de la asignatura Estructura de Datos
-
-Universidad Técnica de Ambato - Por facilitar los recursos académicos
-
-📧 Contacto
-Para dudas o sugerencias, abrir un issue en el repositorio.
-
-⭐ Si este repositorio te fue útil, ¡no olvides darle una estrella!
